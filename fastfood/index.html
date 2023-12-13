@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="container-fluid">
+        
+        <!-- header -->
+        <header class="bg-primary">
+            <div class="inner-header container bg-primary">
+                <a href="./index.html" class="logo text-light">Foodee</a>
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="./index.html">home</a></li>
+                        <li>
+                            <a href="./html/menu.html">menu</a>
+                            <div class="subnav">
+                                <ul>
+                                    <li><a href="./html/burger.html">Burger</a></li>
+                                    <li><a href="./html/pizza.html">Pizza</a></li>
+                                    <li><a href="./html/ga.html">Gà</a></li>
+                                    <li><a href="./html/miy.html">Mì ý</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./html/about.html">about</a></li>
+                        <li><a href="./html/contact.html">contact</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <ul class="icon">
+                        <li><a href="./html/login.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a></li>
+                        <li><a href="./html/shopping-cart.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <input type="text" class="search" placeholder=" Tìm kiếm">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>            
+        </header>
+
+        <!-- banner -->
+        <div class="container-fluid">
+            <div class="banner">
+                <div class="container">
+                    <span class="text-light banner-text">
+                        <h1>Enjoy Your Food At Foodee</h1><br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, quod!</p><br>
+                        <button class="btn-primary btn-primary:hover btn-primary_w_20">Order now <i class="fa-solid fa-cart-shopping"></i></button>
+                    </span>
+                </div>
+                <div class="banner-slideshow">
+                    <div class="banner-slideshow-img">
+                        <div class="images">
+                            <img class="img-slideShow" src="./images/bg1.jpg" alt="">
+                            <img class="img-slideShow" src="./images/bg2.jpg" alt="">
+                            <img class="img-slideShow" src="./images/bg3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </div>
+        
+        <!-- content -->
+        <div class="content container-fluid">
+            <!-- content sale -->
+            <div class="container content-sale">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="p-20">
+                            <div class="row content-sale_tag">
+                                <div class="col-4">
+                                    <img src="./images/burger/burger-2-mieng-bo-phomai.jpg" class="content-sale_img" alt="">
+                                </div>
+                                <div class="col-8 content-sale_text">
+                                    <h3>Burger 2 miếng bò phô mai</h3>
+                                    <p><span>20%</span> off</p>
+                                    <button class="btn-primary btn-primary:hover btn-primary_w_60">Order now <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-20">
+                            <div class="row content-sale_tag">
+                                <div class="col-4">
+                                    <img src="./images/pizza/Pizza-Rau-Cu-Thap-Cam.jpg" class="content-sale_img" alt="">
+                                </div>
+                                <div class="col-8 content-sale_text">
+                                    <h3>Pizza rau củ thập cẩm</h3>
+                                    <p><span>15%</span> off</p>
+                                    <button class="btn-primary btn-primary:hover btn-primary_w_60">Order now <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content filterable -->
+            <div class="container">
+                <h3 class="content-name">Our Menu</h3>                
+            </div>
+            <div class="container content-filterable">
+                <!-- Filter button -->
+                <div id="filter-buttons">
+                    <button class="active" data-name="all">All</button>
+                    <button data-name="burger">Burger</button>
+                    <button data-name="pizza">Pizza</button>
+                    <button data-name="ga">Gà</button>
+                    <button data-name="mi-y">Mì ý</button>
+                </div>
+
+                <!-- Images card -->
+                <div id="filterable-cards">                                         
+                    <div class="card bg-primary" data-name="burger">
+                        <img src="./images/burger/burger-ca.jpg" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Burger cá</h6>
+                            <div class="card-options">
+                                <p class="card-text">46.000đ</p>
+                                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                            </div>
+                        </div>
+                    </div>                               
+                    <div class="card bg-primary" data-name="burger">
+                        <img src="./images/burger/burger-bo-nuong-pho-mai.jpg" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Burger bò nướng phô mai</h6>
+                            <div class="card-options">
+                                <p class="card-text">50.000đ</p>
+                                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                            </div>
+                        </div>
+                    </div>                                
+                    <div class="card bg-primary" data-name="burger">
+                        <img src="./images/burger/burger-bo-nuong-hanh-chien.jpg" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Burger bò nướng hành chiên</h6>
+                            <div class="card-options">
+                                <p class="card-text">48.000đ</p>
+                                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                            </div>
+                        </div>
+                    </div>                                
+                    <div class="card bg-primary" data-name="pizza">
+                        <img src="./images/pizza/Pizza-Bo-Tom-Nuong-Kieu-My.jpg" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Pizza bò tôm nướng kiểu Mỹ</h6>
+                            <div class="card-options">
+                                <p class="card-text">98.000đ</p>
+                                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                            </div>
+                        </div>
+                    </div>                                
+                    <div class="card bg-primary" data-name="pizza">
+                        <img src="./images/pizza/Pizza-Hai-San-Xot-Ca-Chua.jpg" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Pizza hải sản sốt cà chua</h6>
+                            <div class="card-options">
+                                <p class="card-text">90.000đ</p>
+                                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                            </div>
+                        </div>
+                    </div>                                
+                    <div class="card bg-primary" data-name="pizza">
+                        <img src="./images/pizza/Pizza-Xuc-Xich-Y.jpg" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Pizza xúc xích Ý</h6>
+                            <div class="card-options">
+                                <p class="card-text">102.000d</p>
+                                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                            </div>
+                        </div>
+                    </div>                                
+                    <div class="card bg-primary" data-name="ga">
+                        <img src="./images/ga-ran/ga-gion.png" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Gà giòn</h6>
+                            <div class="card-options">
+                                <p class="card-text">36.000đ</p>
+                                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                            </div>
+                        </div>
+                    </div>                                
+                    <div class="card bg-primary" data-name="ga">
+                        <img src="./images/ga-ran/mieng-ga-sot-cay.png" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Miếng gà sốt cay</h6>
+                            <div class="card-options">
+                                <p class="card-text">40.000đ</p>
+                                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-primary" data-name="ga">
+                        <img src="./images/ga-ran/2-mieng-ga-gion.png" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">2 Miếng gà sốt cay</h6>
+                            <div class="card-options">
+                                <p class="card-text">70.000đ</p>
+                                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-primary" data-name="mi-y">
+                        <img src="./images/mi-y/spaghetti-beef.png" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Spaghetti beef</h6>
+                            <div class="card-options">
+                                <p class="card-text">48.000đ</p>
+                                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-primary" data-name="burger">
+                        <img src="./images/burger/burger-bo-thit-heo-xong-khoi.jpg" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Burger bò thịt heo xông khói</h6>
+                            <div class="card-options">
+                                <p class="card-text">40.000đ</p>
+                                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-primary" data-name="mi-y">
+                        <img src="./images/mi-y/spaghetti-beef-L.png" alt="">
+                        <div class="card-body">
+                            <h6 class="card-title">Spaghetti beef (L)</h6>
+                            <div class="card-options">
+                                <p class="card-text">53.000đ</p>
+                                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="btn-center">
+                    <a href=""><button class="btn-primary btn-primary:hover btn-primary_w_20">View More</button></a>
+                </div>
+            </div>
+            
+            <!-- about -->
+            <section class="mt-40">
+                <div class="container-fluid bg-primary">
+                    <div class="container about">
+                        <div class="row">
+                            <div class="col-6 img-about">
+                                <img src="./images/about-img.png" alt="">
+                            </div>
+                            <div class="col-6 content-about">
+                                <span>
+                                    <h1>name</h1><br>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, quod!</p><br>
+                                    <button class="btn-primary btn-primary:hover btn-primary_w_20">button</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- blog -->
+            <!-- <section class="mt-40">
+                <div class="container">
+                    <h3 class="content-name">BLOG</h3>                
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./images/sale-of-15-percent.jpg" alt="">
+                                <div class="card-body">
+                                    <h6 class="card-tittle">c</h6>
+                                    <p class="card-text">Lorem ipsum dollar...</p>
+                                    <div class="btn-center">
+                                        <a href=""><button class="btn-primary btn-primary:hover btn-primary_w_20">View More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./images/sale-of-15-percent.jpg" alt="">
+                                <div class="card-body">
+                                    <h6 class="card-tittle">c</h6>
+                                    <p class="card-text">Lorem ipsum dollar...</p>
+                                    <div class="btn-center">
+                                        <a href=""><button class="btn-primary btn-primary:hover btn-primary_w_20">View More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./images/sale-of-15-percent.jpg" alt="">
+                                <div class="card-body">
+                                    <h6 class="card-tittle">c</h6>
+                                    <p class="card-text">Lorem ipsum dollar...</p>
+                                    <div class="btn-center">
+                                        <a href=""><button class="btn-primary btn-primary:hover btn-primary_w_20">View More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>                       
+        </div> -->
+
+        <!-- contact -->
+        <div class="container mt-40">
+            <div class="container">
+                <h3 class="content-name">Contact Us</h3>                
+            </div>
+            <div class="row">
+                <div class="col-6 p-40">
+                    <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
+                    <from name="lienhe" action="#" class="f-lienhe">
+                        <input type="text" name="hoten" placeholder="Tên khách hàng" class="form-control">
+                        <input type="tel" name="sdt" placeholder="Số điện thoại liên hệ" class="form-control">
+                        <input type="email" name="email" placeholder="Email" class="form-control">
+                        <textarea name="ykien" placeholder="Yêu cầu của quý khách" rows="5" class="form-control"></textarea>
+                        <input type="submit" value="Gửi đi" name="goiform" class="btn-primary">
+                    </from>
+                </div>
+                <div class="col-6 p-40">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.605252164158!2d106.67075587513959!3d10.764875359406465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee10bef3c07%3A0xfd59127e8c2a3e0!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEtpbmggVOG6vyBUUC5IQ00!5e0!3m2!1svi!2s!4v1702389248112!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="container-fluid bg-primary">
+            <div class="container">             
+                <div class="row-top">
+                    <div class="col-4 p-40 footer-col">
+                        <h3>Contact us</h3><br>
+                        <div class="footer-contact-link">
+                            <a href="">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Location</span>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>84+ 0123456789</span>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>mail</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 p-40 footer-col">
+                        <a href="./index.html" class="logo ">Foodee</a>
+                        <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with</p><br>
+                        <div class="footer-social">
+                            <div class="circle">
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            </div>                            
+                            <div class="circle">
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <div class="circle">
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="circle">
+                                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 p-40 footer-col">
+                        <h3>Opening house</h3><br>
+                        <p>Every day</p>
+                        <p>24/24</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    
+</body>
+</html>

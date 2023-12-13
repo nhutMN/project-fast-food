@@ -1,0 +1,324 @@
+/* ------ style header ------ */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #222831;
+    z-index: 2;
+    animation: banner-text-up 2.5s ease;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.inner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding: 0 20px;
+    font-family: 'Dancing Script', cursive;
+    color: #F1F2F3;
+}
+.logo:hover{
+    color: #FA9A1B;
+}
+ul.navbar{
+    display: flex;
+}
+ul.navbar a{
+    text-transform: uppercase;
+    /* để có thể padding cho thẻ a ta sử dung display: block */
+    padding: 10px 20px; 
+    color: #FFFEFE;
+    display: block;
+    font-weight: bold;
+}
+ul.navbar li{
+    position: relative;
+}
+ul.navbar li a{
+    transition: all 1.5s;
+}
+ul.navbar li a:hover{
+    background-color: #ccc;
+    color: #FA9A1B;
+}
+.subnav{
+    display: none;
+    position: absolute;
+    background-color: #F1F2F3;
+    width: 200%; 
+    z-index: 1;   
+}
+.subnav li{
+    border-bottom: #222831 solid 1px;    
+}
+.subnav li a{
+    color: #222831;
+}
+ul.navbar li:hover> .subnav{
+    display: block; 
+    animation: subnav-up .3s ease;   
+}
+ul.icon{
+    display: flex;
+}
+ul.icon a{
+    padding: 10px 20px;
+    color: #FFFEFE;
+    display: block;
+    font-weight: bold;
+}
+ul.icon a:hover{
+    color: #FA9A1B;
+}
+.search{
+    padding: 5px 0;
+    border-radius: 20px;
+}
+.banner{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.banner .banner-text{
+    animation: banner-text-up 2.5s ease;
+}
+
+.banner-slideshow{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.banner-slideshow-img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+}
+.content .images{
+    width: 100%;
+}
+.images img{
+    width: 100%;
+}
+.banner span{
+    position: absolute;
+    z-index: 1;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.banner span h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.banner span p{
+    font-style: italic;
+}
+.content-sale{
+    padding: 20px;
+}
+.content-sale_tag{
+    padding: 20px;
+    background-color: #4B4B4B;
+    border-radius: 20px;
+}
+.content-sale_tag img{
+    border-radius: 50%;
+    border: 5px solid #FA9A1B;
+}
+.content-sale_img{
+    width: 100%;
+    height: 170px;
+    animation: circle 2s infinite linear;
+}
+.content-sale_text{
+    padding-left: 20px;
+    color: #F1F2F3;
+}
+.content-sale_text p{
+    font-family: 'Dancing Script', cursive;   
+}
+.content-sale_text span{
+    font-size: 2rem;
+}
+.content-name{
+    text-align: center;
+    color: #000;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-family: 'Dancing Script', cursive;   
+
+}
+.content-filterable{
+    min-height: 100vh;
+}
+#filter-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+button.active{
+    background: #4070f4;
+    color: #fff;
+}
+#filterable-cards{
+    display: flex;
+    margin-top: 25px;
+    /* gap: 9px; */
+    flex-wrap: wrap;
+}
+.card{
+    flex-basis: 24%;
+    /* background-color: #222831; */
+    /* padding: 3px; */
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.card.hide{
+    display: none;
+}
+.card img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 50px;
+}
+.card-body{
+    padding: 15px 20px 20px;
+}
+.card-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: #F1F2F3;
+}
+.card-options{
+    display: flex;
+    justify-content: space-between;
+}
+.card-options p{
+    color: #F1F2F3;
+}
+.card-options p:hover{
+    color: #FA9A1B;
+}
+.card-text{
+    font-size: 14px;
+    color: #F1F2F3;
+}
+.fa-cart-shopping{
+    cursor: pointer;
+}
+.btn-center{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 10px;
+}
+.about{
+    min-height: 50vh;
+}
+.img-about{
+    padding: 60px;
+}
+.content-about{
+    padding-left: 100px;
+    color: #F1F2F3;
+}
+.f-lienhe .form-control{
+	width: 100%; 
+	margin: 10px; 
+	padding: 10px; 
+	border: 1px solid; 
+	border-radius: 10px; 
+	color: #4B4B4B
+}
+.form-control{
+	width: 100%; 
+	margin: 10px; 
+	padding: 10px; 
+	border: 1px solid; 
+	border-radius: 10px; 
+	color: #4B4B4B
+}
+.form-dk{
+	width: 30%; 
+	margin: 10px; 
+	padding: 10px; 
+	border: 1px solid; 
+	border-radius: 10px
+}
+footer{
+    min-height: 30vh;
+    bottom: 0;
+}
+.footer-col{
+    text-align: center;
+    color: #F1F2F3;
+}
+.footer-col .footer-contact-link{
+    display: flex;
+    flex-direction: column;
+}
+.footer-col .footer-contact-link a{
+    color: #F1F2F3;
+}
+.footer-col .footer-contact-link a:hover{
+    color: #FA9A1B;
+}
+.footer-col .footer-social{
+    display: flex;
+    justify-content: center;
+}
+.footer-col .footer-social .circle{
+    position: relative;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F1F2F3;
+}
+.footer-col .footer-social .circle a{
+    color: #222831;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer-col .footer-social .circle a:hover{
+    color: #FA9A1B;
+}
+
+
+
+

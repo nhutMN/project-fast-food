@@ -1,0 +1,29 @@
+@keyframes subnav-up{
+    0%{
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes banner-text-up{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes circle{
+    to{
+        transform: rotate(360deg);
+    }
+}
